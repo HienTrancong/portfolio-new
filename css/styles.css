@@ -191,9 +191,6 @@ a:active {
     transition-timing-function: ease-in-out;
     transition-delay: none;
 }
-
-
-
 /* End button-----------------------------*/
 
 /*Begin Index----------------*/
@@ -280,9 +277,11 @@ a:active {
   padding-left: 300px;
 
 }
-.overview_aboutme {
-  font-style: italic;
-  font-variant: small-caps;
+
+.experience th, td {
+  color: var(--color-text);
+  font-size: var(--fontsize-text);
+  text-align: center;
 }
 
 .experience,.download-cv {
@@ -298,14 +297,17 @@ a:active {
   text-align: center;
 }
 
-.contact-detail, .contact-form {
+.contact-detail, .contact-form__table {
   padding: 20px;
   font-size: var(--fontsize-text);
+  text-align: left;
+  margin-left: 45%;
 }
 
-#submit_button {
-    margin: 20px;
+.contact-form__table td {
+  text-align: left;
 }
+
 
 /*End Contact-----------------------*/
 
@@ -340,12 +342,6 @@ a:active {
     grid-row: 1/3;
   }
 
-  th, td {
-    color: var(--color-text);
-    font-size: var(--fontsize-text);
-    text-align: center;
-  }
-
 }
 /*End Work-----------------------*/
 
@@ -358,12 +354,6 @@ a:active {
   .grid__item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
-  }
-  h1  {
-    font-size: 22px;
-  }
-  h2  {
-    font-size: 18px;
   }
 }
 
