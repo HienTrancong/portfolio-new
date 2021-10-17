@@ -38,30 +38,44 @@
 
     <main class="contact">
       <h1>Contact</h1>
+
       <div class="contact-detail">
         WuhleStraße <br>
-        12683 Berlin <br>
-        Germany <br>
-        <br>
+        12683, Berlin <br>
+        Germany <br> <br>
+
         Tel: <a href="tel:+4917685210813">+49 176 8521 0813</a> <br>
         Email: <a href="mailto:hien.trancong@gmail.com">hien.trancong@gmail.com</a> <br>
-        Skype: <a href="skype:hien.trancong@gmail.com">hien.trancong@gmail.com</a> <br>
-        <br>
-        <a href="mailto:hien.trancong@gmail.com">Contact me!</a> <br>
+        Skype: <a href="skype:hien.trancong@gmail.com">hien.trancong@gmail.com</a> <br> <br>
+
+        <a href="mailto:hien.trancong@gmail.com">Contact me!</a> <br> <br>
       </div>
 
       <form action="" method="post" class="contact-form">
+        <table class="contact-form__table">
+          <tbody>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td>  <input type="email" name="email" id="email" required placeholder="guest@mail.com"> <br></td>
+            </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required placeholder="guest@mail.com"> <br>
+            <tr>
+              <td><label for="tel">Tel:</label></td>
+              <td><input type="tel" name="tel" id="tel" pattern="\d{4}\d{4}\d{4}" placeholder="xxxx xxxx xxxx"></td>
+            </tr>
 
-        <label for="tel">Tel:</label>
-        <input type="tel" name="tel" id="tel" pattern="\d{4}\d{4}\d{4}" placeholder="xxxx xxxx xxxx"> <br>
+            <tr>
+              <td><label for="message">Message:</label></td>
+              <td><textarea name="message" id="message "rows="5" cols="20" maxlength="240" placeholder="Your message"></textarea></td>
+            </tr>
 
-        <label for="message">Message:</label>
-        <textarea name="message" id="message "rows="2" cols="20" maxlength="240" placeholder="Your message"></textarea> <br>
-        <input type="submit" name="submit_button" id="submit_button" class="button__primary" value="Send message" >
+            <tr>
+              <td></td>
+              <td><input type="submit" name="submit_button" id="submit_button" class="button__primary" value="Send message" ></td>
+            </tr>
 
+          </tbody>
+        </table>
       </form>
 
     </main>
@@ -70,7 +84,6 @@
 
 
     <footer class="page-footer">
-
       <p>Find me on</p>
       <div class="social-media">
         <a href="https://www.github.com" target="_blank" class="social-links">
@@ -83,7 +96,6 @@
           <img src="img/linkedin_icon.svg" alt="linkedin"class="social-links__image">
         </a>
       </div>
-
     </footer>
 
   <script src="js/tota11y.min.js"></script>
