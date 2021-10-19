@@ -72,13 +72,13 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding:  10px;
+  padding: 10px 30px;
   background-color: #9BB7D4;
 }
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50px;
-          flex: 0 1 50px;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
 }
 .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -100,12 +100,10 @@ a:active {
 }
 
 
-
 /*End Page header---------------------------*/
 
 /*Begin Page Footer---------------------------*/
 .page-footer {
-  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,13 +174,7 @@ a:active {
   text-decoration: underline;
 }
 
-.button:hover
-  {
-  cursor: pointer;
-  opacity: 0.7;
-  text-decoration: none;
-}
-
+.button:hover,
 .button:focus
   {
   cursor: pointer;
@@ -190,24 +182,14 @@ a:active {
   text-decoration: none;
 }
 
-.button__primary:hover
-  {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
+.button__primary:hover,
 .button__primary:focus
   {
   cursor: pointer;
   opacity: 0.7;
 }
 
-.button__secondary:hover {
-  cursor: pointer;
-  opacity: 0.7;
-  text-decoration: none;
-}
-
+.button__secondary:hover,
 .button__secondary:focus {
   cursor: pointer;
   opacity: 0.7;
@@ -227,9 +209,7 @@ a:active {
     -webkit-transition-timing-function: ease-in-out;
          -o-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
-    -webkit-transition-delay: none;
-         -o-transition-delay: none;
-            transition-delay: none;
+    /*transition-delay: none;*/
 }
 /* End button-----------------------------*/
 
@@ -237,14 +217,19 @@ a:active {
 .profile__portrait {
   float: left;
   margin-right: 40px;
-  border-bottom: 1px solid rgba(0,0,0.2,0.7);
-  border-right: 1px solid rgba(0,0,0.2,0.7);
-  width: 150px;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+          box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+  max-width: 150px;
   border-radius: 50%;
 }
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#web-span {
+  color: darkred;
 }
 
 .berlin-animation {
@@ -362,13 +347,11 @@ a:active {
 /*End Index----------------*/
 
 /*Begin About me---------------*/
-.overview_aboutme {
+.overview-aboutme {
   font-size: inherit;
-  margin: 20px;
-  text-align: left;
-  padding-right: 300px;
-  padding-left: 300px;
-
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .experience th {
@@ -383,16 +366,14 @@ td {
   text-align: center;
 }
 
-.experience {
+.experience,.download-cv {
   text-align: center;
   margin: auto;
   padding: 10px;
 }
 
-.download-cv {
-  text-align: center;
-  margin: auto;
-  padding: 10px;
+.overview-aboutme__text{
+  text-align: justify;
 }
 /*End About me---------------*/
 
@@ -400,20 +381,33 @@ td {
 
 .contact {
   text-align: center;
+  margin: 0 auto;
 }
 
 .contact-detail {
-  padding: 20px;
   font-size: 16px;
-  text-align: left;
-  margin-left: 45%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contact-form__table {
-  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background-color: #9BB7D4;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.contact-form__table {
   font-size: 16px;
   text-align: left;
-  margin-left: 45%;
+  padding: 30px;
 }
 
 .contact-form__table td {
@@ -444,46 +438,57 @@ td {
     -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin: 50px;
+
   }
   .grid > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+
   }
   .grid > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
+
   }
   .grid > *:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
+
   }
   .grid > *:nth-child(4) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
+
   }
   .grid > *:nth-child(5) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
+
   }
   .grid > *:nth-child(6) {
     -ms-grid-row: 3;
     -ms-grid-column: 5;
+
   }
   .grid > *:nth-child(7) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
+
   }
   .grid > *:nth-child(8) {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
+
   }
   .grid > *:nth-child(9) {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
+
   }
   .grid__item {
     padding: 0 20px;
-    background-color:#9BB7D4;
+    background-color: #9BB7D4;
     width: auto;
     padding: 10px;
     border-radius: 5px;
@@ -501,9 +506,15 @@ td {
 
 /*Begin Media mobile------------------*/
 
+
+
+
+
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
+    margin: 25px;
   }
   .grid__item:last-child {
     grid-column: auto/auto;
@@ -515,6 +526,7 @@ td {
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
+    margin: 15px;
   }
 }
 
@@ -522,6 +534,7 @@ td {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin: 5px;
   }
 }
 
