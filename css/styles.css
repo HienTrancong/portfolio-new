@@ -363,10 +363,6 @@ a:active {
 /*Begin Media mobile------------------*/
 
 
-
-
-
-
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
